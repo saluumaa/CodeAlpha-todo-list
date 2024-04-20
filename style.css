@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 ;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #b8b5b5;
+    color: #333;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+    background-color: rgb(71, 71, 247, 0.9);
+}
+
+h1 {
+    color: #f4f4f4;
+}
+
+.input-container {
+    display: flex;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.input-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    position: relative;
+    border-radius: 10px;
+}
+
+ .input-container  button{
+    position: absolute;
+    padding: 15px;
+    right: 0;
+    left: 65%;
+    padding: 10px 20px;
+    border: none;
+    color:  rgb(71, 71, 247);
+    font-size: 1.5rem;
+    font-weight: 500;
+    background: none;
+}
+
+.list-group {
+    margin-bottom: 20px;
+}
+
+ul li {
+    list-style: none;
+    background: #f4f4f4;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    position: relative;
+}
+
+ul li::before {
+    content: "☐";
+    color: rgb(71, 71, 247);
+    font-weight: bold;
+    display: inline-block;
+    width: 2em;
+    font-size: 1.3rem;
+    margin-left: 0.5px;
+}
+
+ul li.completed {
+    font-style: italic;
+    color: #333;
+    text-decoration: line-through;
+}
+
+ul li.completed::before {
+    content: "✔";
+    color: #0f0;
+}
+
+ul li span{
+    position: absolute;
+    right: 5px;
+    padding-right:10px ;
+    cursor: pointer;
+    color: rgb(71, 71, 247)
+}
+
+ul li span.edit {
+    padding-right: 30px;
+}
